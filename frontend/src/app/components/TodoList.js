@@ -3,11 +3,13 @@ import TodoItem from "./TodoItem";
 
 const TodoList = ({ todos, onSelectTodo, selectedTodo }) => {
   return (
-    <div>
+    <ul>
       {todos.map((todo) => (
-        <TodoItem key={todo.id} todo={todo} onSelectTodo={onSelectTodo} selectedTodo={selectedTodo} />
+        <li key={todo._id}>
+          <TodoItem todo={todo} onSelectTodo={onSelectTodo} selectedTodo={selectedTodo} />
+        </li>
       ))}
-    </div>
+    </ul>
   );
 };
 

@@ -9,7 +9,7 @@ const Navbar = () => {
 
       <div className="flex items-center space-x-2">
         <div className="relative w-8 h-8">
-          <Image src={image1} path alt="Logo Top" width={20} height={20} className="absolute top-2 left-[-2]"/>
+          <Image src={image1} alt="Logo Top" width={20} height={20} className="absolute top-2 left-[-2]"/>
           <Image src={image2}  alt="Logo Bottom" width={20} height={20} className="absolute top-[4] left-1"/>
         </div>
 

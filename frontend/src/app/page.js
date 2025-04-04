@@ -90,7 +90,6 @@ export default function Home() {
         <Sidebar todos={todos} onSelectTodo={handleSelectTodo} selectedTodo={selectedTodo} />
       </div>
 
-      {/* ✅ Show selected To-Do details or a message */}
       {selectedTodo ? (
         <TodoDetails selectedTodo={selectedTodo} onUpdateTodo={handleUpdateTodo} onDeleteTodo={handleDeleteTodo} />
       ) : (
